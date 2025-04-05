@@ -1,0 +1,141 @@
+AQbyWeather.aqParams: 6
+AQbyWeather.aqScenarios: 11 (Default Selected: bakersfield_pm25)
+*** CHOOSE YOUR OWN SCENARIO HERE ***
+Please select a scenario via the following drop-down-list...
+(NOTE: If you change scenario, you must re-run remaining cells to see changes.)
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+{
+  "aqParamTarget": {
+    "desc": "Particulate Matter < 2.5 micrometers",
+    "id": 2,
+    "name": "pm25",
+    "unhealthyThresholdDefault": 12.0,
+    "unit": "\u00b5g/m\u00b3"
+  },
+  "aqRadiusMeters": 16100,
+  "aqRadiusMiles": 10,
+  "location": "bakersfield",
+  "modelFolder": "AutogluonModels",
+  "name": "bakersfield_pm25",
+  "noaaStationID": "72384023155",
+  "noaaStationLat": 0.0,
+  "noaaStationLng": 0.0,
+  "openAqLocIDs": [],
+  "unhealthyThreshold": 12.0,
+  "yearEnd": 2025,
+  "yearStart": 2016
+}
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+Loading NOAA GSOD data from local file:  dataNOAA_bakersfield_pm25_2016-2025_72384023155.csv
+NOAA Station Lat,Lng Updated for Scenario: bakersfield_pm25 => 35.43424,-119.05524
+noaagsod_df.shape = (3373, 13)
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+Accessing ASDI-hosted OpenAQ Locations (HTTPS API)...
+OpenAQ Locations Response:  {'meta': {'name': 'openaq-api', 'website': '/', 'page': 1, 'limit': 10, 'found': 9}, 'results': [{'id': 887, 'name': 'Bakersfield - Califo', 'locality': None, 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 1615, 'name': 'no2 ppm', 'parameter': {'id': 7, 'name': 'no2', 'units': 'ppm', 'displayName': 'NO₂'}}, {'id': 1614, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}, {'id': 1613, 'name': 'pm25 µg/m³', 'parameter': {'id': 2, 'name': 'pm25', 'units': 'µg/m³', 'displayName': 'PM2.5'}}], 'coordinates': {'latitude': 35.3561, 'longitude': -119.0403}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.0403, 35.3561, -119.0403, 35.3561], 'distance': 8770.1173437, 'datetimeFirst': {'utc': '2016-03-06T20:00:00Z', 'local': '2016-03-06T12:00:00-08:00'}, 'datetimeLast': {'utc': '2017-05-15T18:00:00Z', 'local': '2017-05-15T11:00:00-07:00'}}, {'id': 901, 'name': 'Oildale - 3311 Manor', 'locality': None, 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 1648, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}, {'id': 19782, 'name': 'pm10 µg/m³', 'parameter': {'id': 1, 'name': 'pm10', 'units': 'µg/m³', 'displayName': 'PM10'}}], 'coordinates': {'latitude': 35.4389, 'longitude': -119.0158}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.0158, 35.4389, -119.0158, 35.4389], 'distance': 3615.35075414, 'datetimeFirst': {'utc': '2016-03-06T20:00:00Z', 'local': '2016-03-06T12:00:00-08:00'}, 'datetimeLast': {'utc': '2019-04-18T19:00:00Z', 'local': '2019-04-18T12:00:00-07:00'}}, {'id': 6883, 'name': 'Bakersfield - Califo', 'locality': None, 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 19787, 'name': 'no2 ppm', 'parameter': {'id': 7, 'name': 'no2', 'units': 'ppm', 'displayName': 'NO₂'}}, {'id': 19785, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}, {'id': 19786, 'name': 'pm25 µg/m³', 'parameter': {'id': 2, 'name': 'pm25', 'units': 'µg/m³', 'displayName': 'PM2.5'}}], 'coordinates': {'latitude': 35.356667, 'longitude': -119.062778}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.062778, 35.356667, -119.062778, 35.356667], 'distance': 8629.62261404, 'datetimeFirst': {'utc': '2017-05-15T19:00:00Z', 'local': '2017-05-15T12:00:00-07:00'}, 'datetimeLast': {'utc': '2019-04-18T19:00:00Z', 'local': '2019-04-18T12:00:00-07:00'}}, {'id': 6885, 'name': 'Bakersfield - Califo', 'locality': 'Bakersfield', 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 4272382, 'name': 'no ppm', 'parameter': {'id': 35, 'name': 'no', 'units': 'ppm', 'displayName': 'NO'}}, {'id': 19789, 'name': 'no2 ppm', 'parameter': {'id': 7, 'name': 'no2', 'units': 'ppm', 'displayName': 'NO₂'}}, {'id': 4272200, 'name': 'nox ppm', 'parameter': {'id': 19840, 'name': 'nox', 'units': 'ppm', 'displayName': 'NOx'}}, {'id': 19792, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}, {'id': 19790, 'name': 'pm25 µg/m³', 'parameter': {'id': 2, 'name': 'pm25', 'units': 'µg/m³', 'displayName': 'PM2.5'}}], 'coordinates': {'latitude': 35.356615, 'longitude': -119.06261300000001}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.06261300000001, 35.356615, -119.06261300000001, 35.356615], 'distance': 8634.19141041, 'datetimeFirst': {'utc': '2019-04-18T20:00:00Z', 'local': '2019-04-18T13:00:00-07:00'}, 'datetimeLast': {'utc': '2024-04-18T07:00:00Z', 'local': '2024-04-18T00:00:00-07:00'}}, {'id': 6886, 'name': 'Oildale - 3311 Manor', 'locality': 'Bakersfield', 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 5077683, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}, {'id': 5077777, 'name': 'pm10 µg/m³', 'parameter': {'id': 1, 'name': 'pm10', 'units': 'µg/m³', 'displayName': 'PM10'}}], 'coordinates': {'latitude': 35.438035, 'longitude': -119.016787}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.016787, 35.438035, -119.016787, 35.438035], 'distance': 3513.80172423, 'datetimeFirst': {'utc': '2022-10-04T18:00:00Z', 'local': '2022-10-04T11:00:00-07:00'}, 'datetimeLast': {'utc': '2025-04-05T17:00:00Z', 'local': '2025-04-05T10:00:00-07:00'}}, {'id': 8473, 'name': 'Bakersfield-Muni', 'locality': 'Bakersfield', 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 24610, 'name': 'co ppm', 'parameter': {'id': 8, 'name': 'co', 'units': 'ppm', 'displayName': 'CO'}}, {'id': 4272478, 'name': 'no ppm', 'parameter': {'id': 35, 'name': 'no', 'units': 'ppm', 'displayName': 'NO'}}, {'id': 24609, 'name': 'no2 ppm', 'parameter': {'id': 7, 'name': 'no2', 'units': 'ppm', 'displayName': 'NO₂'}}, {'id': 4272220, 'name': 'nox ppm', 'parameter': {'id': 19840, 'name': 'nox', 'units': 'ppm', 'displayName': 'NOx'}}, {'id': 24608, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}], 'coordinates': {'latitude': 35.3313, 'longitude': -119.0}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.0, 35.3313, -119.0, 35.3313], 'distance': 12469.65030329, 'datetimeFirst': {'utc': '2016-08-05T19:00:00Z', 'local': '2016-08-05T12:00:00-07:00'}, 'datetimeLast': {'utc': '2025-04-05T17:00:00Z', 'local': '2025-04-05T10:00:00-07:00'}}, {'id': 28777, 'name': 'Bakersfield - Califo', 'locality': 'Bakersfield', 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 5077807, 'name': 'no ppm', 'parameter': {'id': 35, 'name': 'no', 'units': 'ppm', 'displayName': 'NO'}}, {'id': 5077754, 'name': 'no2 ppm', 'parameter': {'id': 7, 'name': 'no2', 'units': 'ppm', 'displayName': 'NO₂'}}, {'id': 5077693, 'name': 'nox ppm', 'parameter': {'id': 19840, 'name': 'nox', 'units': 'ppm', 'displayName': 'NOx'}}, {'id': 5077706, 'name': 'o3 ppm', 'parameter': {'id': 10, 'name': 'o3', 'units': 'ppm', 'displayName': 'O₃'}}, {'id': 5077547, 'name': 'pm25 µg/m³', 'parameter': {'id': 2, 'name': 'pm25', 'units': 'µg/m³', 'displayName': 'PM2.5'}}], 'coordinates': {'latitude': 35.356615, 'longitude': -119.06261300000001}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.06261300000001, 35.356615, -119.06261300000001, 35.356615], 'distance': 8634.19141041, 'datetimeFirst': {'utc': '2023-05-09T03:00:00Z', 'local': '2023-05-08T20:00:00-07:00'}, 'datetimeLast': {'utc': '2025-04-05T17:00:00Z', 'local': '2025-04-05T10:00:00-07:00'}}, {'id': 230814, 'name': 'Bakersfield - Golden', 'locality': 'Bakersfield', 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 1584628, 'name': 'pm10 µg/m³', 'parameter': {'id': 1, 'name': 'pm10', 'units': 'µg/m³', 'displayName': 'PM10'}}, {'id': 1328938, 'name': 'pm25 µg/m³', 'parameter': {'id': 2, 'name': 'pm25', 'units': 'µg/m³', 'displayName': 'PM2.5'}}], 'coordinates': {'latitude': 35.3853, 'longitude': -119.014702}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.014702, 35.3853, -119.014702, 35.3853], 'distance': 6554.81880733, 'datetimeFirst': {'utc': '2021-08-03T19:00:00Z', 'local': '2021-08-03T12:00:00-07:00'}, 'datetimeLast': {'utc': '2025-04-05T17:00:00Z', 'local': '2025-04-05T10:00:00-07:00'}}, {'id': 269725, 'name': 'Bakersfield-Westwind', 'locality': 'KERN', 'timezone': 'America/Los_Angeles', 'country': {'id': 155, 'code': 'US', 'name': 'United States'}, 'owner': {'id': 4, 'name': 'Unknown Governmental Organization'}, 'provider': {'id': 119, 'name': 'AirNow'}, 'isMobile': False, 'isMonitor': True, 'instruments': [{'id': 2, 'name': 'Government Monitor'}], 'sensors': [{'id': 1557288, 'name': 'no2 ppm', 'parameter': {'id': 7, 'name': 'no2', 'units': 'ppm', 'displayName': 'NO₂'}}], 'coordinates': {'latitude': 35.377, 'longitude': -119.044028}, 'licenses': [{'id': 33, 'name': 'US Public Domain', 'attribution': {'name': 'Unknown Governmental Organization', 'url': None}, 'dateFrom': '2016-01-30', 'dateTo': None}], 'bounds': [-119.044028, 35.377, -119.044028, 35.377], 'distance': 6426.85306447, 'datetimeFirst': {'utc': '2021-10-11T18:00:00Z', 'local': '2021-10-11T11:00:00-07:00'}, 'datetimeLast': {'utc': '2025-04-05T17:00:00Z', 'local': '2025-04-05T10:00:00-07:00'}}]}
+OpenAQ Location IDs within 10 miles (16100m) of NOAA Station 72384023155 at 35.43424,-119.05524: [887, 901, 6883, 6885, 6886, 8473, 28777, 230814, 269725]
+Loading OpenAQ data from local file:  dataOpenAQ_bakersfield_pm25_2016-2025_887-901-6883-6885-6886-8473-28777-230814-269725.csv
+aq_df.shape = (13, 3)
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+merged_df.shape = (13, 11)
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+Number of training samples: 10
+Number of validation samples: 3
+Scenario: bakersfield_pm25 => Particulate Matter < 2.5 micrometers (pm25) with UnhealthyThreshold > 12.0 µg/m³
+Warning: path already exists! This predictor may overwrite an existing predictor! path="AutogluonModels/aq_bakersfield_pm25_2016-2025/"
+Verbosity: 2 (Standard Logging)
+=================== System Info ===================
+AutoGluon Version:  1.2
+Python Version:     3.9.21
+Operating System:   Darwin
+Platform Machine:   arm64
+Platform Version:   Darwin Kernel Version 24.4.0: Wed Mar 19 21:11:02 PDT 2025; root:xnu-11417.101.15~1/RELEASE_ARM64_T8132
+CPU Count:          10
+Memory Avail:       5.47 GB / 16.00 GB (34.2%)
+Disk Space Avail:   618.44 GB / 1907.41 GB (32.4%)
+===================================================
+Presets specified: ['best_quality']
+Setting dynamic_stacking from 'auto' to True. Reason: Enable dynamic_stacking when use_bag_holdout is disabled. (use_bag_holdout=False)
+Stack configuration (auto_stack=True): num_stack_levels=1, num_bag_folds=5, num_bag_sets=1
+DyStack is enabled (dynamic_stacking=True). AutoGluon will try to determine whether the input data is affected by stacked overfitting and enable or disable stacking as a consequence.
+	This is used to identify the optimal `num_stack_levels` value. Copies of AutoGluon will be fit on subsets of the data. Then holdout validation data is used to detect stacked overfitting.
+	Warning: No time limit provided for DyStack. This could take awhile.
+	Running DyStack sub-fit in a ray process to avoid memory leakage. Enabling ray logging (enable_ray_logging=True). Specify `ds_args={'enable_ray_logging': False}` if you experience logging issues.
+2025-04-06 02:09:54,780	INFO worker.py:1810 -- Started a local Ray instance. View the dashboard at 127.0.0.1:8265 
+		Context path: "/Users/macos/workspace_mj/aqi-weather-ml/AutogluonModels/aq_bakersfield_pm25_2016-2025/ds_sub_fit/sub_fit_ho"
+(_dystack pid=3511) Running DyStack sub-fit ...
+(_dystack pid=3511) Beginning AutoGluon training ...
+(_dystack pid=3511) AutoGluon will save models to "/Users/macos/workspace_mj/aqi-weather-ml/AutogluonModels/aq_bakersfield_pm25_2016-2025/ds_sub_fit/sub_fit_ho"
+(_dystack pid=3511) Train Data Rows:    9
+(_dystack pid=3511) Train Data Columns: 10
+(_dystack pid=3511) Label Column:       isUnhealthy
+(_dystack pid=3511) Problem Type:       binary
+(_dystack pid=3511) Preprocessing data ...
+(_dystack pid=3511) Warning: Updated label_count_threshold from 10 to 1 to avoid cutting too many classes.
+(_dystack pid=3511) Selected class <--> label mapping:  class 1 = 1, class 0 = 0
+(_dystack pid=3511) Using Feature Generators to preprocess the data ...
+(_dystack pid=3511) Fitting AutoMLPipelineFeatureGenerator...
+(_dystack pid=3511) 	Available Memory:                    5549.28 MB
+(_dystack pid=3511) 	Train Data (Original)  Memory Usage: 0.00 MB (0.0% of available memory)
+(_dystack pid=3511) 	Inferring data type of each feature based on column values. Set feature_metadata_in to manually specify special dtypes of the features.
+(_dystack pid=3511) 	Stage 1 Generators:
+(_dystack pid=3511) 		Fitting AsTypeFeatureGenerator...
+(_dystack pid=3511) 			Note: Converting 1 features to boolean dtype as they only contain 2 unique values.
+(_dystack pid=3511) 	Stage 2 Generators:
+(_dystack pid=3511) 		Fitting FillNaFeatureGenerator...
+(_dystack pid=3511) 	Stage 3 Generators:
+(_dystack pid=3511) 		Fitting IdentityFeatureGenerator...
+(_dystack pid=3511) 		Fitting DatetimeFeatureGenerator...
+(_dystack pid=3511) 	Stage 4 Generators:
+(_dystack pid=3511) 		Fitting DropUniqueFeatureGenerator...
+(_dystack pid=3511) 	Stage 5 Generators:
+(_dystack pid=3511) 		Fitting DropDuplicatesFeatureGenerator...
+(_dystack pid=3511) 	Useless Original Features (Count: 1): ['MONTH']
+(_dystack pid=3511) 		These features carry no predictive signal and should be manually investigated.
+(_dystack pid=3511) 		This is typically a feature which has the same value for all rows.
+(_dystack pid=3511) 		These features do not need to be present at inference time.
+(_dystack pid=3511) 	Types of features in original data (raw dtype, special dtypes):
+(_dystack pid=3511) 		('datetime', []) : 1 | ['date']
+(_dystack pid=3511) 		('float', [])    : 8 | ['DEWP', 'WDSP', 'MAX', 'MIN', 'PRCP', ...]
+(_dystack pid=3511) 	Types of features in processed data (raw dtype, special dtypes):
+(_dystack pid=3511) 		('float', [])                : 7 | ['DEWP', 'WDSP', 'MAX', 'MIN', 'VISIB', ...]
+(_dystack pid=3511) 		('int', ['bool'])            : 1 | ['PRCP']
+(_dystack pid=3511) 		('int', ['datetime_as_int']) : 3 | ['date', 'date.day', 'date.dayofweek']
+(_dystack pid=3511) 	0.0s = Fit runtime
+(_dystack pid=3511) 	9 features in original data used to generate 11 features in processed data.
+(_dystack pid=3511) 	Train Data (Processed) Memory Usage: 0.00 MB (0.0% of available memory)
+(_dystack pid=3511) Data preprocessing and feature engineering runtime = 0.01s ...
+(_dystack pid=3511) AutoGluon will gauge predictive performance using evaluation metric: 'accuracy'
+(_dystack pid=3511) 	To change this, specify the eval_metric parameter of Predictor()
+(_dystack pid=3511) Large model count detected (112 configs) ... Only displaying the first 3 models of each family. To see all, set `verbosity=3`.
+(_dystack pid=3511) User-specified model hyperparameters to be fit:
+(_dystack pid=3511) {
+(_dystack pid=3511) 	'NN_TORCH': [{}, {'activation': 'elu', 'dropout_prob': 0.10077639529843717, 'hidden_size': 108, 'learning_rate': 0.002735937344002146, 'num_layers': 4, 'use_batchnorm': True, 'weight_decay': 1.356433327634438e-12, 'ag_args': {'name_suffix': '_r79', 'priority': -2}}, {'activation': 'elu', 'dropout_prob': 0.11897478034205347, 'hidden_size': 213, 'learning_rate': 0.0010474382260641949, 'num_layers': 4, 'use_batchnorm': False, 'weight_decay': 5.594471067786272e-10, 'ag_args': {'name_suffix': '_r22', 'priority': -7}}],
+(_dystack pid=3511) 	'GBM': [{'extra_trees': True, 'ag_args': {'name_suffix': 'XT'}}, {}, {'learning_rate': 0.03, 'num_leaves': 128, 'feature_fraction': 0.9, 'min_data_in_leaf': 3, 'ag_args': {'name_suffix': 'Large', 'priority': 0, 'hyperparameter_tune_kwargs': None}}],
+(_dystack pid=3511) 	'CAT': [{}, {'depth': 6, 'grow_policy': 'SymmetricTree', 'l2_leaf_reg': 2.1542798306067823, 'learning_rate': 0.06864209415792857, 'max_ctr_complexity': 4, 'one_hot_max_size': 10, 'ag_args': {'name_suffix': '_r177', 'priority': -1}}, {'depth': 8, 'grow_policy': 'Depthwise', 'l2_leaf_reg': 2.7997999596449104, 'learning_rate': 0.031375015734637225, 'max_ctr_complexity': 2, 'one_hot_max_size': 3, 'ag_args': {'name_suffix': '_r9', 'priority': -5}}],
+(_dystack pid=3511) 	'XGB': [{}, {'colsample_bytree': 0.6917311125174739, 'enable_categorical': False, 'learning_rate': 0.018063876087523967, 'max_depth': 10, 'min_child_weight': 0.6028633586934382, 'ag_args': {'name_suffix': '_r33', 'priority': -8}}, {'colsample_bytree': 0.6628423832084077, 'enable_categorical': False, 'learning_rate': 0.08775715546881824, 'max_depth': 5, 'min_child_weight': 0.6294123374222513, 'ag_args': {'name_suffix': '_r89', 'priority': -16}}],
+(_dystack pid=3511) 	'FASTAI': [{}, {'bs': 256, 'emb_drop': 0.5411770367537934, 'epochs': 43, 'layers': [800, 400], 'lr': 0.01519848858318159, 'ps': 0.23782946566604385, 'ag_args': {'name_suffix': '_r191', 'priority': -4}}, {'bs': 2048, 'emb_drop': 0.05070411322605811, 'epochs': 29, 'layers': [200, 100], 'lr': 0.08974235041576624, 'ps': 0.10393466140748028, 'ag_args': {'name_suffix': '_r102', 'priority': -11}}],
+(_dystack pid=3511) 	'RF': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+(_dystack pid=3511) 	'XT': [{'criterion': 'gini', 'ag_args': {'name_suffix': 'Gini', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'entropy', 'ag_args': {'name_suffix': 'Entr', 'problem_types': ['binary', 'multiclass']}}, {'criterion': 'squared_error', 'ag_args': {'name_suffix': 'MSE', 'problem_types': ['regression', 'quantile']}}],
+(_dystack pid=3511) 	'KNN': [{'weights': 'uniform', 'ag_args': {'name_suffix': 'Unif'}}, {'weights': 'distance', 'ag_args': {'name_suffix': 'Dist'}}],
+(_dystack pid=3511) }
+(_dystack pid=3511) AutoGluon will fit 2 stack levels (L1 to L2) ...
+(_dystack pid=3511) Fitting 110 L1 models, fit_strategy="sequential" ...
+(_dystack pid=3511) Fitting model: KNeighborsUnif_BAG_L1 ...
+(_dystack pid=3511) 	0.8889	 = Validation score   (accuracy)
+(_dystack pid=3511) 	0.0s	 = Training   runtime
+(_dystack pid=3511) 	0.02s	 = Validation runtime
+(_dystack pid=3511) Fitting model: KNeighborsDist_BAG_L1 ...
+(_dystack pid=3511) 	0.7778	 = Validation score   (accuracy)
+(_dystack pid=3511) 	0.0s	 = Training   runtime
+(_dystack pid=3511) 	0.0s	 = Validation runtime
+(_dystack pid=3511) Fitting model: LightGBMXT_BAG_L1 ...
+(_dystack pid=3511) 	Fitting 5 child models (S1F1 - S1F5) | Fitting with ParallelLocalFoldFittingStrategy (5 workers, per: cpus=2, gpus=0, memory=0.04%)
+(_dystack pid=3511) 	0.8889	 = Validation score   (accuracy)
+(_dystack pid=3511) 	0.43s	 = Training   runtime
+(_dystack pid=3511) 	0.0s	 = Validation runtime
+(_dystack pid=3511) Fitting model: LightGBM_BAG_L1 ...
+(_dystack pid=3511) 	Fitting 5 child models (S1F1 - S1F5) | Fitting with ParallelLocalFoldFittingStrategy (5 workers, per: cpus=2, gpus=0, memory=0.04%)
+(_dystack pid=3511) 	0.8889	 = Validation score   (accuracy)
+(_dystack pid=3511) 	0.24s	 = Training   runtime
+(_dystack pid=3511) 	0.0s	 = Validation runtime
